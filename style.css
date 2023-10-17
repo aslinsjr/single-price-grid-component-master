@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: azure;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 40%;
+    margin: 3rem auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
+    border-radius: 5px;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 1.5rem 4rem 1.5rem 1.5rem;
+}
+
+.box2 {
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 0 0 0 5px;
+    padding: 1.5rem;
+}
+
+.box3 {
+    background-color: hsla(179, 62%, 43%, 0.7);
+    border-radius: 0 0 5px 0;
+    padding: 1.5rem 4rem 1.5rem 1.5rem;
+}
+
+.box3 h3 {
+    margin-bottom: 1rem;
+}
+
+p,
+h1,
+h3 {
+    color: white;
+}
+
+.box1 p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+span,
+p {
+    font-size: 13px;
+    line-height: 170%;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+#subtitle {
+    margin: 1rem auto;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+li {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    background-color: hsl(71, 73%, 54%);
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.5s
+}
+
+#button {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover {
+    background-color: hsla(71, 73%, 54%, 0.61);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: black;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        box-shadow: none;
+    }
+
+    .box1 {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .box2 {
+        border-radius: 0;
+    }
+
+    .box3 {
+        border-radius: 0 0 5px 5px;
+    }
+    
+}
